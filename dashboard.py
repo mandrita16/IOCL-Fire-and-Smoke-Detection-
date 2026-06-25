@@ -25,6 +25,12 @@ st_autorefresh(
     key="refresh"
 )
 
+if os.path.exists("live_frame.jpg"):
+    st.subheader("🎥 Live CCTV Feed")
+    st.image(
+        "live_frame.jpg",
+        use_container_width=True
+)
 # ==================================
 # CSS
 # ==================================
