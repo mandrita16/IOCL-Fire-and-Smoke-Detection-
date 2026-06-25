@@ -162,6 +162,10 @@ for video_path in video_files:
             fire_counter = 0
 
         annotated = results[0].plot()
+        cv2.imwrite(
+          "live_frame.jpg",
+           annotated
+          )
 
         cv2.putText(
             annotated,
